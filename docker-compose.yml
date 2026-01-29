@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pbl-my-app
+    restart: unless-stopped
+    ports:
+      - "2554:3000"
+    environment:
+      - NODE_ENV=production
+      # Add your environment variables here
+      # - NEXT_PUBLIC_API_URL=https://your-api-url.com
+      # - DATABASE_URL=your-database-url
+    # If you have a .env file, uncomment the line below
+    # env_file:
+    #   - .env
+    networks:
+      - pbl-network
+    # If you need to persist data, uncomment the volumes section
+    # volumes:
+    #   - ./data:/app/data
+
+networks:
+  pbl-network:
+    driver: bridge
