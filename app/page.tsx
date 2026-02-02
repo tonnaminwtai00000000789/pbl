@@ -182,6 +182,10 @@ export default function Home() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center">
         <p className="text-slate-400">ไม่พบข้อมูล</p>
+           <Button onClick={fetchData} className="w-full" variant="destructive">
+              <RefreshCw className="mr-2 h-4 w-4" />
+              ลองใหม่อีกครั้ง
+            </Button>
       </div>
     );
   }
@@ -198,7 +202,7 @@ export default function Home() {
           </h1>
           <p className="text-slate-400 text-sm md:text-base flex items-center justify-center gap-2 mt-2">
             <Activity className="h-4 w-4" />
-            ESP32-S2-100_995b489e
+            ESP33แพงชิบหาย
           </p>
         </div>
 
