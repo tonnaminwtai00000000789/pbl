@@ -8,7 +8,7 @@ export async function GET() {
         headers: {
           'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ6ZWwuZGEuc3VwYWtyb25AZ21haWwuY29tIiwiaWF0IjoxNzY5NjgwODc5ODU3fQ.7JiZMArrUJ54b9acaKBUUCmstNt-Z8erfgV_Jw4SzNY',
         },
-        cache: 'no-store', // Disable caching to always get fresh data
+        cache: '10s', // Disable caching to always get frsh data
       }
     );
 
