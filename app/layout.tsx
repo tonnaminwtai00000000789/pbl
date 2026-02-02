@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ระบบตรวจวัดคุณภาพอากาศ | Air Quality Monitor",
-  description: "ระบบตรวจวัดและแสดงผลค่าฝุ่น PM1.0, PM2.5 และ PM10 แบบเรียลไทม์จากเซ็นเซอร์ ESP32-S2",
+  description: "ระบบตรวจวัดและแสดงผลค่าฝุ่น PM1.0, PM2.5 และ PM10 แบบเรียลไทม์",
 };
 
 export default function RootLayout({
