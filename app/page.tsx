@@ -113,37 +113,31 @@ export default function Home() {
       level: 'ดีมาก',
       color: 'from-emerald-500 to-green-600',
       badge: 'default',
-      icon: '😊'
     };
     if (pm25 <= 35) return {
       level: 'ดี',
       color: 'from-blue-500 to-cyan-600',
       badge: 'secondary',
-      icon: '🙂'
     };
     if (pm25 <= 55) return {
       level: 'ปานกลาง',
       color: 'from-yellow-500 to-amber-600',
       badge: 'outline',
-      icon: '😐'
     };
     if (pm25 <= 150) return {
       level: 'เริ่มมีผลต่อสุขภาพ',
       color: 'from-orange-500 to-red-600',
       badge: 'destructive',
-      icon: '😷'
     };
     if (pm25 <= 250) return {
       level: 'มีผลต่อสุขภาพ',
       color: 'from-red-500 to-rose-700',
       badge: 'destructive',
-      icon: '🤢'
     };
     return {
       level: 'อันตราย',
       color: 'from-purple-600 to-fuchsia-800',
       badge: 'destructive',
-      icon: '☠️'
     };
   };
 
